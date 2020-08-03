@@ -1,9 +1,8 @@
 package br.com.qalenium.rules;
 
-import org.junit.rules.ExternalResource;
-import org.junit.rules.TestRule;
+import br.com.qalenium.interfaces.IMobileTestsRule;
 
-public class MobileTestsRule extends ExternalResource implements TestRule {
+public class MobileTestsRule extends GenericTestsRule implements IMobileTestsRule {
 
     @Override
     protected void before() {
